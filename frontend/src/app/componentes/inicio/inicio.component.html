@@ -1,0 +1,123 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <button type="button" class="btn btn-outline-info" (click)="getAttributes()"><i class="fas fa-eye"></i> Ver User</button>
+        </div>
+        <div class="col-md-auto">
+            <button type="button" class="btn btn-outline-warning" (click)="onLogout()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+        </div>
+    </div>
+    <table class="table table-dark table-hover mt-2">
+        <thead>
+            <tr>
+                <th *ngFor="let val of attributes">{{val.Name}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td *ngFor="let val of attributes">{{val.Value}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div>
+    <img src="../../../assets/images/fondo_starwars.jpg" width="100%">
+</div>
+<section class="fondostarwars">
+    <div class="starwars-demo">
+        <h2 class="byline" id="byline" style="margin-top: -26%;">Bienvenidos a </h2>
+        <img src="https://blog.flamingtext.com/blog/2023/05/11/flamingtext_com_1683817700_299057218.png" border="0" alt="Star" class="star img1" style="margin-top: 14%;">
+        <h2 class="byline" id="byline" style="margin-top: 43%;">May the Force be with you</h2>
+    </div>
+</section>
+
+<section class="ftco-section ftco-no-pt ftco-no-pb m-5">
+    <div class="container">
+        <div class="row no-gutters ftco-services">
+            <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
+                <div class="media block-6 services p-4 py-md-5">
+                    <div class="icon d-flex justify-content-center align-items-center mb-4">
+                        <!-- Icono -->
+                        <img src="../../../assets/images/online_shopping.png" width="23%">
+                        <span class="flaticon-bag"></span>
+                    </div>
+                    <div class="media-body">
+                        <h3 class="heading">Envío Gratis</h3>
+                        <p>Envíos gratis en todos nuestros productos! Sabemos lo importante que es para nuestros clientes recibir sus compras de manera rápida y sin gastos adicionales, por lo que hemos decidido implementar esta fantástica promoción.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
+                <div class="media block-6 services p-4 py-md-5">
+                    <div class="icon d-flex justify-content-center align-items-center mb-4">
+                        <!-- Icono -->
+                        <img src="../../../assets/images/support_customer.png" width="23%">
+                        <span class="flaticon-customer-service"></span>
+                    </div>
+                    <div class="media-body">
+                        <h3 class="heading">Atención al Cliente</h3>
+                        <p>Nuestro equipo de atención al cliente está compuesto por profesionales amables, capacitados y dispuestos a ayudarte en cada etapa del proceso. Estamos aquí para responder a tus preguntas, resolver cualquier problema que puedas
+                            encontrar y brindarte asistencia personalizada.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center d-flex align-self-stretch ftco-animate fadeInUp ftco-animated">
+                <div class="media block-6 services p-4 py-md-5">
+                    <div class="icon d-flex justify-content-center align-items-center mb-4">
+                        <!-- Icono -->
+                        <img src="../../../assets/images/secure_payments.png" width="23%">
+                        <span class="flaticon-payment-security"></span>
+                    </div>
+                    <div class="media-body">
+                        <h3 class="heading">Pagos Seguros</h3>
+                        <p>Hemos integrado métodos de pago confiables y seguros para brindarte opciones flexibles y protegidas al realizar tus compras. Puedes estar seguro de que tus transacciones serán procesadas de manera segura y que tus datos financieros
+                            estarán protegidos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ------------------------------------------------------------------------------------------------------------ -->
+
+<div class="container secciones">
+    <div class="text-center">
+        <h1>Productos</h1>
+    </div>
+    <div class="row row-cols-3 mt-3 justify-content-between">
+        <!-- Tarjeta -->
+        <div class=" col card m-2 mt-5" style="width: 18rem;">
+            <img src="assets/images/comics/infinity-war.jpg" class="card-img-top" alt="imagen">
+            <div class="card-body text-center">
+                <h5 class="card-title">Comics</h5>
+                <p class="card-text"></p>
+                <div>
+                    <a [routerLink]="['/Comics']" class="ov-btn-slide-left">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <!-- Tarjeta -->
+        <div class=" col card m-2 mt-5" style="width: 18rem;">
+            <img src="assets/images/mangas/chainsawman.jpg" class="card-img-top" alt="imagen">
+            <div class="card-body text-center">
+                <h5 class="card-title">Mangas</h5>
+                <p class="card-text"></p>
+                <div>
+                    <a [routerLink]="['/Mangas']" class="ov-btn-slide-left">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <!-- Tarjeta -->
+        <div class=" col card m-2 mt-5" style="width: 18rem;">
+            <img src="assets/images/libros/ljh_pcys.jpg" class="card-img-top" alt="imagen">
+            <div class="card-body text-center">
+                <h5 class="card-title">Libros</h5>
+                <p class="card-text"></p>
+                <div>
+                    <a [routerLink]="['/Libros']" class="ov-btn-slide-left">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
